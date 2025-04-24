@@ -1,0 +1,9 @@
+.social-link {
+  @apply text-2xl hover:scale-110 transition-transform duration-300 ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .social-link {
+    @apply text-3xl;
+  }
+} 

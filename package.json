@@ -20,5 +20,8 @@
     "react-icons": "^5.5.0",
     "swiper": "^11.2.6",
     "typescript": "latest"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.10.7"
   }
 }

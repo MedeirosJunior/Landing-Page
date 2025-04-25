@@ -11,19 +11,19 @@ import 'swiper/css/pagination';
 
 const images = [
   {
-    src: 'https://github.com/MedeirosJunior/Landing-Page/blob/main/public/images/slide1.jpg',
+    src: 'https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/slide1.jpg',
     alt: 'Consultoria Empresarial',
     title: 'Consultoria Empresarial',
     description: 'Soluções estratégicas para o seu negócio'
   },
   {
-    src: 'https://github.com/MedeirosJunior/Landing-Page/blob/main/public/images/slide2.jpg',
+    src: 'https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/slide2.jpg',
     alt: 'Treinamentos',
     title: 'Treinamentos',
     description: 'Capacitação profissional de alta performance'
   },
   {
-    src: 'https://github.com/MedeirosJunior/Landing-Page/blob/main/public/images/slide3.jpg',
+    src: 'https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/slide3.jpg',
     alt: 'Gestão de Projetos',
     title: 'Gestão de Projetos',
     description: 'Metodologias ágeis e resultados eficientes'

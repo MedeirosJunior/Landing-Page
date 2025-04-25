@@ -6,10 +6,15 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = {
   images: {
-    remotePatterns: [new URL('https://github.com/MedeirosJunior/Landing-Page/blob/main/public/images/*')],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '/MedeirosJunior/Landing-Page/main/public/images/**',
+      },
+    ],
   },
-}
+};
+
+module.exports = nextConfig;

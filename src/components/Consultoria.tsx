@@ -11,7 +11,7 @@ const Consultoria = () => {
           {/* Coluna da Imagem */}
           <div className="col-md-6">
             <Image
-              src="/images/consultoria.jpg" // Substitua pelo caminho correto da imagem
+              src="https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/blob/main/public/images/consultoria.jpg?raw=true" // Substitua pelo caminho correto da imagem
               alt="Consultoria"
               width={500}
               height={400}

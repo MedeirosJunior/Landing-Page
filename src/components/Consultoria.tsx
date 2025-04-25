@@ -5,39 +5,48 @@ import Image from 'next/image';
 
 const Consultoria = () => {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="w-full md:w-1/2">
-            
+    <section className="py-5">
+      <div className="container">
+        <div className="row align-items-center g-4">
+          {/* Coluna da Imagem */}
+          <div className="col-md-6">
+            <Image
+              src="/images/consultoria.jpg" // Substitua pelo caminho correto da imagem
+              alt="Consultoria"
+              width={500}
+              height={400}
+              className="img-fluid rounded shadow"
+            />
           </div>
-          <div className="w-full md:w-1/2">
-            <h2 className="text-4xl font-bold mb-6">NOSSOS SERVIÇOS</h2>
-            <div className="w-20 h-1 bg-red-500 mb-8"></div>
-            <p className="text-gray-700 text-lg mb-6">
+
+          {/* Coluna do Conteúdo */}
+          <div className="col-md-6">
+            <h2 className="display-5 fw-bold mb-4">NOSSOS SERVIÇOS</h2>
+            <div className="mb-4" style={{ width: '80px', height: '4px', backgroundColor: '#F7941D' }}></div>
+            <p className="text-muted mb-4">
               Oferecemos consultoria especializada em desenvolvimento pessoal e profissional, 
               com foco em transformação real e resultados duradouros. Nossa abordagem é 
               personalizada e adaptada às suas necessidades específicas.
             </p>
-            <ul className="space-y-4 mb-8">
-              <li className="flex items-center">
-                <span className="text-red-500 mr-2">✓</span>
+            <ul className="list-unstyled mb-4">
+              <li className="d-flex align-items-center mb-2">
+                <span className="text-success me-2">✓</span>
                 Coaching individual e em grupo
               </li>
-              <li className="flex items-center">
-                <span className="text-red-500 mr-2">✓</span>
+              <li className="d-flex align-items-center mb-2">
+                <span className="text-success me-2">✓</span>
                 Mentoria profissional
               </li>
-              <li className="flex items-center">
-                <span className="text-red-500 mr-2">✓</span>
+              <li className="d-flex align-items-center mb-2">
+                <span className="text-success me-2">✓</span>
                 Desenvolvimento de liderança
               </li>
-              <li className="flex items-center">
-                <span className="text-red-500 mr-2">✓</span>
+              <li className="d-flex align-items-center mb-2">
+                <span className="text-success me-2">✓</span>
                 Treinamentos corporativos
               </li>
             </ul>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded hover:bg-blue-700 transition-colors">
+            <button className="btn btn-primary btn-lg">
               Conheça nossos serviços
             </button>
           </div>
@@ -47,4 +56,4 @@ const Consultoria = () => {
   );
 };
 
-export default Consultoria; 
+export default Consultoria;

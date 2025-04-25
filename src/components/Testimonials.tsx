@@ -22,28 +22,27 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4">
+    <section className="py-5 bg-light">
+      <div className="container">
+        <h2 className="text-center fw-bold mb-4">
           DEPOIMENTOS
         </h2>
-        <div className="w-24 h-1 bg-red-500 mx-auto mb-12"></div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mx-auto mb-5" style={{ width: '80px', height: '4px', backgroundColor: '#F7941D' }}></div>
+
+        <div className="row g-4">
           {testimonials.map((testimonial, index) => (
-            <div 
-              key={index}
-              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <p className="text-gray-700 mb-6">
-                {testimonial.text}
-              </p>
-              <div>
-                <div className="text-[#F7941D] font-bold">
-                  {testimonial.author}
-                </div>
-                <div className="text-gray-600">
-                  {testimonial.role}
+            <div key={index} className="col-md-4">
+              <div className="card shadow-sm border-0 h-100">
+                <div className="card-body">
+                  <p className="card-text text-muted mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  <h5 className="card-title text-primary fw-bold">
+                    {testimonial.author}
+                  </h5>
+                  <p className="card-subtitle text-muted">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
             </div>
@@ -54,4 +53,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials; 
+export default Testimonials;

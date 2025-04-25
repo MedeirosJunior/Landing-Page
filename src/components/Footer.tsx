@@ -3,37 +3,37 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
-import '../app/styles/social-icons.css';
+import '../app/styles/social-icons.css'; // Mantém o CSS personalizado
 
 const locations = [
   {
-    title: "Belo Horizonte/MG",
-    address: "Rua das Flores, 123",
-    city: "Belo Horizonte, MG 31000-000",
-    phone: "(31) 99999-9999"
-  }  
+    title: "Nosso endereço:",
+    address: "Rua das Flores, Nº 123",
+    city: "Belo Horizonte / MG - 31000-000",
+    phone: "(31)99999-9999"
+  }
 ];
 
 const Footer = () => {
   return (
-    <footer className="py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-dark text-light py-5">
+      <div className="container">
+        <div className="row g-4">
           {/* Coluna 1 - Logo e Descrição */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-xl font-bold mb-4">Consultoria Financeira</h3>
-            <p className="text-gray-300 text-center md:text-left">
+          <div id="footer" className="col-md-4">
+            <h3 className="text-uppercase fw-bold mb-4">Consultoria Financeira</h3>
+            <p className="text-muted">
               Ajudamos você a tomar as melhores decisões financeiras para seu futuro.
             </p>
             {locations.map((location, index) => (
-              <div key={index} className="mt-4 text-gray-300">
-                <p className="font-semibold">{location.title}</p>
+              <div key={index} className="mt-4">
+                <p className="fw-bold">{location.title}</p>
                 <p>{location.address}</p>
                 <p>{location.city}</p>
                 <p className="mt-2">
-                  <a 
+                  <a
                     href={`tel:${location.phone}`}
-                    className="hover:text-white transition-colors"
+                    className="text-light text-decoration-none"
                     aria-label={`Ligar para ${location.phone}`}
                   >
                     {location.phone}
@@ -44,28 +44,28 @@ const Footer = () => {
           </div>
 
           {/* Coluna 2 - Links Rápidos */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-xl font-bold mb-4">Links Rápidos</h3>
-            <nav className="flex flex-col space-y-2">
-              <Link href="/" className="text-gray-300 hover:text-white transition-colors">
+          <div className="col-md-4">
+            <h3 className="text-uppercase fw-bold mb-4">Links Rápidos</h3>
+            <nav className="d-flex flex-column">
+              <Link href="/" className="text-muted text-decoration-none mb-2">
                 Início
               </Link>
-              <Link href="/sobre" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="/sobre" className="text-muted text-decoration-none mb-2">
                 Sobre
               </Link>
-              <Link href="/servicos" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="/servicos" className="text-muted text-decoration-none mb-2">
                 Serviços
               </Link>
-              <Link href="/contato" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="/contato" className="text-muted text-decoration-none mb-2">
                 Contato
               </Link>
             </nav>
           </div>
 
           {/* Coluna 3 - Redes Sociais */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-xl font-bold mb-4">Redes Sociais</h3>
-            <div className="flex gap-4 items-center">
+          <div className="col-md-4">
+            <h3 className="text-uppercase fw-bold mb-4">Redes Sociais</h3>
+            <div className="d-flex gap-3">
               <a
                 href="https://www.facebook.com/profile.php?id=100093201491471"
                 target="_blank"
@@ -98,8 +98,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-400">
+        <div className="mt-5 pt-4 border-top border-secondary text-center">
+          <p className="text-muted mb-0">
             © {new Date().getFullYear()} Consultoria Financeira. Todos os direitos reservados.
           </p>
         </div>
@@ -108,4 +108,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

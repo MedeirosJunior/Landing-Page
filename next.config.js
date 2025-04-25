@@ -8,4 +8,8 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig 
+module.exports = {
+  images: {
+    remotePatterns: [new URL('https://github.com/MedeirosJunior/Landing-Page/blob/main/public/images/*')],
+  },
+}

@@ -100,7 +100,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-5 pt-4 border-top border-secondary text-center">
           <p className="text-muted mb-0">
-            © {new Date().getFullYear()} Consultoria Financeira. Todos os direitos reservados.
+            © {new Date().getFullYear()} JR-info-System. Todos os direitos reservados.
           </p>
         </div>
       </div>

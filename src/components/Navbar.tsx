@@ -16,6 +16,17 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (!event.target.closest('.navbar-collapse') && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [isOpen]);
+
   return (
     <nav className={`navbar navbar-expand-lg fixed-top transition-all duration-300 ${
       isScrolled ? 'bg-dark' : 'bg-dark-transparent'
@@ -48,10 +59,10 @@ const Navbar = () => {
               <Link href="/cursos" className="nav-link" onClick={() => setIsOpen(false)}>Cursos</Link>
             </li>
             <li className="nav-item">
-              <Link href="/consultoria" className="nav-link" onClick={() => setIsOpen(false)}>Consultoria</Link>
+              <Link href="/contato" className="nav-link" onClick={() => setIsOpen(false)}>Contato</Link>
             </li>
             <li className="nav-item">
-              <Link href="#footer" className="nav-link" onClick={() => setIsOpen(false)}>Contato</Link>
+              <Link href="#footer" className="nav-link" onClick={() => setIsOpen(false)}>Fale Conosco</Link>
             </li>
           </ul>
         </div>
@@ -60,4 +71,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

@@ -5,6 +5,7 @@ import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import ImageCarousel from '../components/ImageCarousel';
 
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -13,7 +14,7 @@ export default function Home() {
       <Hero />
       <Consultoria />
       <Testimonials />
-      <Footer />
+      <Footer />     
     </main>
   );
-} 
+}

@@ -79,7 +79,7 @@ const Contato = () => {
                   Telefone
                 </label>
                 <MaskedInput
-                  mask="(99) 99999-9999"
+                  mask="(99)99999-9999"
                   className="form-control"
                   id="phone"
                   name="phone"

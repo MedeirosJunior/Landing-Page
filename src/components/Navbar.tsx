@@ -18,7 +18,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (!event.target.closest('.navbar-collapse') && isOpen) {
+      const target = event.target as HTMLElement | null;
+      if (target && !target.closest('.navbar-collapse') && isOpen) {
         setIsOpen(false);
       }
     };
@@ -28,18 +29,17 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className={`navbar navbar-expand-lg fixed-top transition-all duration-300 ${
-      isScrolled ? 'bg-dark' : 'bg-dark-transparent'
-    }`}>
+    <nav className={`navbar navbar-expand-lg fixed-top transition-all duration-300 ${isScrolled ? 'bg-dark' : 'bg-dark-transparent'
+      }`}>
       <div className="container">
         <Link href="/" className="navbar-brand d-flex align-items-center">
           <span className="h4 mb-0">Vivian Nunes</span>
           <span className="ms-2 small text-uppercase">Consultoria</span>
         </Link>
-        
-        <button 
-          className="navbar-toggler" 
-          type="button" 
+
+        <button
+          className="navbar-toggler"
+          type="button"
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
           aria-label="Toggle navigation"

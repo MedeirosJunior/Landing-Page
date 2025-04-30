@@ -2,6 +2,7 @@
   width: 70%;
   height: 500px;
   margin-top: 0;
+  margin-bottom: 4rem; /* Adiciona espaçamento inferior */
   position: relative;
 }
 
@@ -69,4 +70,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-} 
+}

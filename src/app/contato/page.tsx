@@ -40,7 +40,9 @@ const Contato = () => {
   return (
     <section className="py-5 bg-light">
       <div id="contato" className="container">
-        <h2 className="text-center fw-bold mb-4">Entre em Contato</h2>
+        <h2 className="text-center fw-bold mb-4">
+          Entre em contato,<br /> nos mande uma mensagem!
+        </h2>
         <div
           className="mx-auto mb-5"
           style={{ width: "80px", height: "4px", backgroundColor: "#F7941D" }}

@@ -14,6 +14,7 @@ const nextConfig = {
         pathname: '/MedeirosJunior/Landing-Page/main/public/images/**',
       },
     ],
+    domains: ['via.placeholder.com'], // Adicione o domínio aqui
   },
 };
 

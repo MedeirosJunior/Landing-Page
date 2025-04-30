@@ -2,10 +2,11 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Consultoria = () => {
   return (
-    <section className="py-5">
+    <section className="py-5 mt-5">
       <div className="container">
         <div className="row align-items-center g-4">
           {/* Coluna da Imagem */}
@@ -47,7 +48,9 @@ const Consultoria = () => {
               </li>
             </ul>
             <button className="btn btn-primary btn-lg">
-              Conheça nossos serviços
+              <Link href="/servicos" className="text-white text-decoration-none">
+                Conheça nossos serviços
+              </Link>
             </button>
           </div>
         </div>

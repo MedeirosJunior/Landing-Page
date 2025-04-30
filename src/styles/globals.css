@@ -6,4 +6,29 @@
   .social-link {
     @apply text-3xl;
   }
-} 
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  border-bottom: 5px solid #f7941d;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #f7941d;
+  border-color: #f7941d;
+}

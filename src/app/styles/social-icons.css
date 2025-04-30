@@ -129,7 +129,7 @@ footer {
   position: relative;
   background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
   color: white;
-  margin-top: 4rem;
+  margin-top: 3rem; /* Ajustado para 3rem */
 }
 
 footer::before {
@@ -184,4 +184,9 @@ footer .social-link.instagram:hover {
 
 footer .social-link.whatsapp:hover {
   background-color: #25D366 !important;
-} 
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

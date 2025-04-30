@@ -1,8 +1,11 @@
-import React from "react";
-import InputMask from "react-input-mask";
+import React, { forwardRef } from "react";
 
-const MaskedInput = React.forwardRef<HTMLInputElement, any>((props, ref) => (
-  <InputMask {...props} inputRef={ref} />
-));
+const MaskedInput = forwardRef<HTMLInputElement, any>((props, ref) => {
+  const { mask, ...rest } = props;
+
+  // Apply the mask logic here if needed
+
+  return <input {...rest} ref={ref} />;
+});
 
 export default MaskedInput;

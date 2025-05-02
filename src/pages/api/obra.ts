@@ -2,9 +2,10 @@ import fs from "fs";
 import path from "path";
 import { NextApiRequest, NextApiResponse } from "next";
 
+
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const baseDir = path.join(process.cwd(), "public", "images");
-  const obras = [];
+  const obras: any[] = [];
 
   // Percorre os diretórios dentro de "public/images"
   const folders = fs.readdirSync(baseDir);

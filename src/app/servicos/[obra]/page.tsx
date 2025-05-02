@@ -4,25 +4,35 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 
+interface Obra {
+  slug: string;
+  title: string;
+  description: string;
+  images: string[];
+}
+
 const ObraPage = () => {
-  const { obra } = useParams(); // Obtém o parâmetro dinâmico da URL
-  const [obraData, setObraData] = useState(null);
+  const params = useParams(); // Obtém os parâmetros dinâmicos da URL
+  const obra = params && typeof params.obra === "string" ? params.obra : ""; // Garante que 'obra' seja uma string
+  const [obraData, setObraData] = useState<Obra | null>(null);
   const [loading, setLoading] = useState(true);
-  const [selectedImage, setSelectedImage] = useState(null); // Estado para a imagem maximizada
+  const [selectedImage, setSelectedImage] = useState<string | null>(null); // Estado para a imagem maximizada
 
   useEffect(() => {
+    if (!obra) return; // Evita fazer a requisição se 'obra' for uma string vazia
+
     // Faz a requisição para a API
     fetch("/api/getObras")
       .then((res) => res.json())
-      .then((data) => {
+      .then((data: Obra[]) => {
         const foundObra = data.find((o) => o.slug === obra);
-        setObraData(foundObra);
+        setObraData(foundObra || null);
         setLoading(false);
       })
       .catch(() => setLoading(false));
   }, [obra]);
 
-  const handleImageClick = (image) => {
+  const handleImageClick = (image: string) => {
     setSelectedImage(image); // Define a imagem selecionada para exibição no modal
   };
 

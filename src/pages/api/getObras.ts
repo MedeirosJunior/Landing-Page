@@ -1,13 +1,20 @@
-import fs from "fs";
 import path from "path";
+import fs from "fs";
 import { NextApiRequest, NextApiResponse } from "next";
+
+interface Obra {
+  slug: string;
+  title: string;
+  description: string;
+  images: string[];
+}
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const baseDir = path.join(process.cwd(), "public", "images");
-  const obras = [];
+  const obras: Obra[] = []; // Tipagem explícita para 'obras'
 
   // Mapeamento de descrições para cada serviço
-  const descriptions = {
+  const descriptions: Record<string, string> = {
     box: "Box de vidro para banheiros com design moderno.",
     portas: "Portas de vidro para ambientes internos e externos.",
     basculas: "Básculas de vidro para ventilação e iluminação.",
@@ -21,20 +28,17 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     janelas: "Janelas de vidro para eficiência energética e estética.",
   };
 
-  // Percorre os diretórios dentro de "public/images"
-  const folders = fs.readdirSync(baseDir);
+  // Lê os diretórios dentro de 'public/images'
+  const directories = fs.readdirSync(baseDir);
 
-  folders.forEach((folder) => {
-    const folderPath = path.join(baseDir, folder);
-
-    // Verifica se é um diretório
-    if (fs.lstatSync(folderPath).isDirectory()) {
-      const images = fs.readdirSync(folderPath).map((file) => `/images/${folder}/${file}`);
-
+  directories.forEach((dir) => {
+    const dirPath = path.join(baseDir, dir);
+    if (fs.lstatSync(dirPath).isDirectory()) {
+      const images = fs.readdirSync(dirPath).map((file) => `/images/${dir}/${file}`);
       obras.push({
-        slug: folder.toLowerCase().replace(/ /g, "-"),
-        title: folder.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
-        description: descriptions[folder.toLowerCase()] || "Descrição não disponível.",
+        slug: dir,
+        title: dir.charAt(0).toUpperCase() + dir.slice(1),
+        description: descriptions[dir] || "Descrição não disponível.",
         images,
       });
     }

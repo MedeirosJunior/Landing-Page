@@ -1,12 +1,15 @@
+/* === Base === */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* === Variáveis === */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
 }
 
+/* === Body === */
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
@@ -15,48 +18,41 @@ body {
   background-repeat: no-repeat;
 }
 
+/* === Utilitários Customizados === */
 @layer utilities {
   .container {
-    @apply max-w-7xl mx-auto px-15 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
 
+/* === Layout === */
 section + section {
-  margin-top: 0; /* Remove o espaçamento entre seções consecutivas */
+  margin-top: 0;
 }
 
+/* === Footer === */
 footer {
-  background-color: #000000 !important; /* Fundo preto para contraste */
+  background-color: #000000 !important;
 }
 
-/* Links no footer - Sempre visíveis */
 footer a {
-  color: #ffffff !important; /* Cor branca para visibilidade constante */
-  text-decoration: none; /* Remove sublinhado */
-  transition: color 0.3s ease; /* Transição suave para hover */
+  color: #ffffff !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #f0f0f0 !important; /* Cor levemente diferente no hover */
+  color: #f0f0f0 !important;
 }
 
-/* Títulos no footer */
-footer h3 {
-  color: #ffffff !important; /* Cor branca para títulos */
-}
-
-/* Parágrafos no footer */
-footer p {
-  color: #ffffff !important; /* Cor branca para textos */
+footer h3,
+footer p,
+footer .text-muted {
+  color: #ffffff !important;
 }
 
 footer .bg-dark {
   background-color: #000000 !important;
-}
-
-/* Links com classe text-muted no footer */
-footer .text-muted {
-  color: #ffffff !important; /* Substitui o cinza claro por branco */
 }
 
 footer .text-uppercase {
@@ -81,4 +77,29 @@ footer .d-flex {
 
 footer .flex-column {
   flex-direction: column;
+}
+
+/* === Modal === */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }

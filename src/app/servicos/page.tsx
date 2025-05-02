@@ -4,14 +4,21 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+interface Obra {
+  slug: string;
+  title: string;
+  description: string;
+  images: string[];
+}
+
 const Servicos = () => {
-  const [obras, setObras] = useState([]);
+  const [obras, setObras] = useState<Obra[]>([]);
 
   useEffect(() => {
-    // Faz a requisição para a API
     fetch("/api/getObras")
       .then((res) => res.json())
-      .then((data) => setObras(data));
+      .then((data: Obra[]) => setObras(data))
+      .catch((err) => console.error("Erro ao buscar obras:", err));
   }, []);
 
   return (
@@ -24,7 +31,7 @@ const Servicos = () => {
               <div className="card shadow-sm h-100">
                 <div className="image-container">
                   <Image
-                    src={obra.images[0]} // Exibe a primeira imagem como destaque
+                    src={obra.images[0]}
                     alt={obra.title}
                     width={400}
                     height={300}

@@ -14,9 +14,10 @@ const nextConfig = {
         pathname: '/MedeirosJunior/Landing-Page/main/public/images/**',
       },
     ],
-    domains: ['via.placeholder.com'], // Adicione o domínio aqui
-    domains: ['gleeful-mermaid-da1ea1.netlify.app'], // Substitua pelo domínio do seu site no Netlify
-  
+    domains: [
+      'via.placeholder.com', // Domínio para imagens de placeholder
+      'gleeful-mermaid-da1ea1.netlify.app', // Domínio do seu site no Netlify
+    ],
   },
 };
 

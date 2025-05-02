@@ -13,10 +13,16 @@ const nextConfig = {
         hostname: 'raw.githubusercontent.com',
         pathname: '/MedeirosJunior/Landing-Page/main/public/images/**',
       },
-    ],
-    domains: [
-      'via.placeholder.com', // Domínio para imagens de placeholder
-      'gleeful-mermaid-da1ea1.netlify.app', // Domínio do seu site no Netlify
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+        pathname: '/**', // Permite qualquer caminho no domínio
+      },
+      {
+        protocol: 'https',
+        hostname: 'gleeful-mermaid-da1ea1.netlify.app',
+        pathname: '/**', // Permite qualquer caminho no domínio
+      },
     ],
   },
 };

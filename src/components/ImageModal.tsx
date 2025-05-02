@@ -25,18 +25,18 @@ const ImageModal: React.FC<ImageModalProps> = ({ imageUrl, onClose }) => {
         className="modal-content"
         onClick={(e) => e.stopPropagation()} // Evita fechar ao clicar dentro do modal
       >
-        <Image
+        <img
           src={imageUrl}
           alt="Imagem Maximizada"
-          width={800}
-          height={600}
-          className="img-fluid"
+          className="modal-image"
         />
         <button
           onClick={onClose}
           className="btn-close"
           aria-label="Close"
-        ></button>
+        >
+          &times;
+        </button>
       </div>
     </div>,
     modalRoot

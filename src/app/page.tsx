@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import ImageCarousel from '../components/ImageCarousel';
 
 
+
 export default function Home() {
   return (
     <main className="min-h-screen">

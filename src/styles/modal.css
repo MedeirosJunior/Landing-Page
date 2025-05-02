@@ -1,0 +1,37 @@
+/* === Modal === */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  z-index: 1050; /* Garante que o modal fique acima de outros elementos */
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%; /* Limita a largura máxima do modal */
+  max-height: 90%; /* Limita a altura máxima do modal */
+  background-color: white; /* Fundo branco */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor do modal */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse o modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #000; /* Cor preta para o botão de fechar */
+  cursor: pointer;
+}

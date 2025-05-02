@@ -1,13 +1,18 @@
-import './globals.css'
-import './styles/social-icons.css'
-import './styles/carousel.css'
-import './styles/navbar.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import WhatsAppButton from '../components/WhatsAppButton'
+import '../styles/globals.css'; // Estilos globais
+import '../styles/modal.css'; // Estilos do modal
+import '../styles/footer.css'; // Estilos do footer
+import '../styles/images.css'; // Estilos das imagens
+import '../styles/social-icons.css';
+import '../styles/carousel.css';
+import '../styles/navbar.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import WhatsAppButton from '../components/WhatsAppButton';
+import ClientWrapper from '../components/ClientWrapper'; // Confirme que esse arquivo existe
 
-const inter = Inter({ subsets: ['latin'] })
+import BootstrapClient from '../components/BootStrapClient'; // Importa diretamente o BootstrapClient
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Vivian Nunes Consultoria',
@@ -16,19 +21,18 @@ export const metadata: Metadata = {
   authors: [{ name: 'Vivian Nunes' }],
   creator: 'Vivian Nunes',
   publisher: 'Vivian Nunes Consultoria',
-}
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" dir="ltr">
+    <html lang="pt-BR">
       <body className={inter.className}>
-        {children}
-        <WhatsAppButton />
+        <BootstrapClient /> {/* Carrega o Bootstrap apenas no cliente */}
+        <ClientWrapper>
+          {children}
+          <WhatsAppButton />
+        </ClientWrapper>
       </body>
     </html>
-  )
-} 
+  );
+}

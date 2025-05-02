@@ -1,0 +1,50 @@
+/* === Footer === */
+footer {
+    background-color: #000000 !important;
+  }
+  
+  footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #f0f0f0 !important;
+  }
+  
+  footer h3,
+  footer p,
+  footer .text-muted {
+    color: #ffffff !important;
+  }
+  
+  footer .bg-dark {
+    background-color: #000000 !important;
+  }
+  
+  footer .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  footer .fw-bold {
+    font-weight: bold;
+  }
+  
+  footer .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  footer .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer .d-flex {
+    display: flex;
+  }
+  
+  footer .flex-column {
+    flex-direction: column;
+  }
+  
+  

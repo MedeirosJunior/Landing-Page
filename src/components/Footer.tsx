@@ -3,7 +3,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
-import '../app/styles/social-icons.css'; // Mantém o CSS personalizado
+import '../styles/social-icons.css'; // Mantém o CSS personalizado
 
 const locations = [
   {

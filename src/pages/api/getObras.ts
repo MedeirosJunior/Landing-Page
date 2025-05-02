@@ -11,7 +11,7 @@ interface Obra {
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const baseDir = path.join(process.cwd(), "public", "images");
-  const obras: Obra[] = []; // Tipagem explícita para 'obras'
+  const obra: Obra[] = []; // Tipagem explícita para 'obras'
 
   // Mapeamento de descrições para cada serviço
   const descriptions: Record<string, string> = {
@@ -35,7 +35,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const dirPath = path.join(baseDir, dir);
     if (fs.lstatSync(dirPath).isDirectory()) {
       const images = fs.readdirSync(dirPath).map((file) => `/images/${dir}/${file}`);
-      obras.push({
+      obra.push({
         slug: dir,
         title: dir.charAt(0).toUpperCase() + dir.slice(1),
         description: descriptions[dir] || "Descrição não disponível.",
@@ -44,5 +44,5 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     }
   });
 
-  res.status(200).json(obras);
+  res.status(200).json(obra);
 }

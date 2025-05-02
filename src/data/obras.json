@@ -1,0 +1,163 @@
+[
+  {
+    "slug": "basculas",
+    "title": "Basculas",
+    "description": "Básculas de vidro para ventilação e iluminação.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/1.jpeg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/2.jpeg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/3.jpeg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/4.jpeg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/5.jpeg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/6.jpeg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/7.jpeg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/8.jpeg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/basculas/9.jpeg"
+    ]
+  },
+  {
+    "slug": "box",
+    "title": "Box",
+    "description": "Box de vidro para banheiros com design moderno.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/1.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/10.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/11.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/2.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/3.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/4.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/5.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/6.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/7.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/8.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/box/9.jpg"
+    ]
+  },
+  {
+    "slug": "cortinas",
+    "title": "Cortinas",
+    "description": "Cortinas de vidro para ambientes internos e externos.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/cortinas/1.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/cortinas/2.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/cortinas/3.jpg"
+    ]
+  },
+  {
+    "slug": "divisorias",
+    "title": "Divisorias",
+    "description": "Divisórias de vidro para ambientes comerciais e residenciais.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/divisorias/1.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/divisorias/2.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/divisorias/3.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/divisorias/4.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/divisorias/5.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/divisorias/6.jpg"
+    ]
+  },
+  {
+    "slug": "espelhos",
+    "title": "Espelhos",
+    "description": "Espelhos de vidro para decoração e funcionalidade.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/espelhos/1.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/espelhos/2.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/espelhos/3.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/espelhos/4.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/espelhos/5.jpg"
+    ]
+  },
+  {
+    "slug": "esquadrias",
+    "title": "Esquadrias",
+    "description": "Esquadrias de vidro para janelas e portas.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/1.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/10.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/2.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/3.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/4.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/5.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/6.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/7.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/8.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/esquadrias/9.JPG"
+    ]
+  },
+  {
+    "slug": "guardacorpo",
+    "title": "Guardacorpo",
+    "description": "Descrição não disponível.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/1.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/10.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/11.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/12.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/2.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/3.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/4.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/5.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/6.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/7.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/8.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/guardacorpo/9.JPG"
+    ]
+  },
+  {
+    "slug": "janelas",
+    "title": "Janelas",
+    "description": "Janelas de vidro para eficiência energética e estética.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/1.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/2.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/3.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/4.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/5.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/6.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/7.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/8.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/janelas/9.jpg"
+    ]
+  },
+  {
+    "slug": "muros",
+    "title": "Muros",
+    "description": "Muros de vidro para segurança e estética.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/muros/1.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/muros/2.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/muros/3.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/muros/4.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/muros/5.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/muros/6.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/muros/7.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/muros/8.jpg"
+    ]
+  },
+  {
+    "slug": "portas",
+    "title": "Portas",
+    "description": "Portas de vidro para ambientes internos e externos.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/portas/1.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/portas/2.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/portas/3.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/portas/4.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/portas/5.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/portas/6.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/portas/7.JPG"
+    ]
+  },
+  {
+    "slug": "tetos",
+    "title": "Tetos",
+    "description": "Tetos de vidro para iluminação natural e design moderno.",
+    "images": [
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/tetos/1.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/tetos/2.JPG",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/tetos/3.jpg",
+      "https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/tetos/4.JPG"
+    ]
+  }
+]

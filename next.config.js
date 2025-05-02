@@ -15,6 +15,8 @@ const nextConfig = {
       },
     ],
     domains: ['via.placeholder.com'], // Adicione o domínio aqui
+    domains: ['gleeful-mermaid-da1ea1.netlify.app'], // Substitua pelo domínio do seu site no Netlify
+  
   },
 };
 

@@ -1,92 +1,39 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 import "../styles/navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css"; // Apenas CSS (seguro para SSR)
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // Estado do menu colapsado
-  const pathname = usePathname();
-
-  // Detecta o scroll para alterar o estilo da navbar
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      import("bootstrap/dist/js/bootstrap.bundle.min.js");
+    }
   }, []);
 
   return (
-    <nav
-      className={`navbar navbar-expand-lg fixed-top transition-all ${isScrolled ? "bg-dark" : "bg"
-        }`}
-    >
-      <div className="container">
-        {/* Logo */}
-        <Link href="/" className="navbar-brand text-uppercase fw-bold">
-          Vivian Nunes Consultoria
-        </Link>
-
-        {/* Links de navegação (antes do botão de colapso) */}
-        <ul className="navbar-nav ms-auto text-uppercase d-none d-lg-flex">
-          <li className={`nav-item ${pathname === "/servicos" ? "active" : ""}`}>
-            <Link href="/servicos" className="nav-link">
-              <i className="bi bi-camera" style={{ fontSize: "24px" }}></i>
-              <div>Serviços</div>
-            </Link>
-          </li>
-          <li className={`nav-item ${pathname === "/contato" ? "active" : ""}`}>
-            <Link href="/contato" className="nav-link">
-              <i className="bi bi-envelope" style={{ fontSize: "24px" }}></i>
-              <div>Contato</div>
-            </Link>
-          </li>
-          <li className={`nav-item ${pathname === "/sobre" ? "active" : ""}`}>
-            <Link href="#footer" className="nav-link">
-              <i className="bi bi-lightbulb" style={{ fontSize: "24px" }}></i>
-              <div>Sobre</div>
-            </Link>
-          </li>
-        </ul>
-
-        {/* Botão de colapso */}
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <Link href="/" className="navbar-brand">Vivian Nunes Consultoria</Link>
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded={isOpen}
-          aria-label="Toggle navigation"
-          onClick={() => setIsOpen(!isOpen)}
+          data-bs-target="#navbarSupportedContent"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
-        {/* Links de navegação (dentro do colapso para telas menores) */}
-        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
-          <ul className="navbar-nav ms-auto text-uppercase">
-            <li className={`nav-item ${pathname === "/servicos" ? "active" : ""}`}>
-              <Link href="/servicos" className="nav-link" onClick={() => setIsOpen(false)}>
-                <i className="bi bi-camera" style={{ fontSize: "24px" }}></i>
-                <div>Serviços</div>
-              </Link>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link href="#footer" className="nav-link">Sobre</Link>
             </li>
-            <li className={`nav-item ${pathname === "/contato" ? "active" : ""}`}>
-              <Link href="/contato" className="nav-link" onClick={() => setIsOpen(false)}>
-                <i className="bi bi-envelope" style={{ fontSize: "24px" }}></i>
-                <div>Contato</div>
-              </Link>
+            <li className="nav-item">
+              <Link href="/servicos" className="nav-link">Serviços</Link>
             </li>
-            <li className={`nav-item ${pathname === "/sobre" ? "active" : ""}`}>
-              <Link href="#footer" className="nav-link" onClick={() => setIsOpen(false)}>
-                <i className="bi bi-lightbulb" style={{ fontSize: "24px" }}></i>
-                <div>Sobre</div>
-              </Link>
+            <li className="nav-item">
+              <Link href="/contato" className="nav-link">Contato</Link>
             </li>
           </ul>
         </div>

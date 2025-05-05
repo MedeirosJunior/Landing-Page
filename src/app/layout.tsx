@@ -9,7 +9,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ClientWrapper from '../components/ClientWrapper'; // Confirme que esse arquivo existe
-
 import BootstrapClient from '../components/BootStrapClient'; // Importa diretamente o BootstrapClient
 
 const inter = Inter({ subsets: ['latin'] });

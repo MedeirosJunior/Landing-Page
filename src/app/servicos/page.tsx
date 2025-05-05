@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation"; // Importa o hook useRouter
 
 interface Obra {
   slug: string;
@@ -13,6 +14,7 @@ interface Obra {
 
 const Servicos = () => {
   const [obras, setObras] = useState<Obra[]>([]);
+  const router = useRouter(); // Inicializa o hook useRouter
 
   useEffect(() => {
     fetch("/api/getObras")
@@ -50,6 +52,19 @@ const Servicos = () => {
           ))}
         </div>
       </div>
+
+      {/* Botão flutuante "Voltar" no topo */}
+      <button
+        className="btn btn-secondary btn-lg position-fixed"
+        style={{
+          top: "20px", // Posiciona no topo
+          right: "20px", // Alinha à direita
+          zIndex: 1000, // Garante que o botão fique acima de outros elementos
+        }}
+        onClick={() => router.back()} // Redireciona para a página anterior
+      >
+        Voltar
+      </button>
     </section>
   );
 };

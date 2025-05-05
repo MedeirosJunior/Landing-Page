@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation"; // Importa o hook useRouter
 import Image from "next/image";
 
 interface Obra {
@@ -13,6 +13,7 @@ interface Obra {
 
 const ObraPage = () => {
   const params = useParams(); // Obtém os parâmetros dinâmicos da URL
+  const router = useRouter(); // Inicializa o hook useRouter
   const obra = params && typeof params.obra === "string" ? params.obra : ""; // Garante que 'obra' seja uma string
   const [obraData, setObraData] = useState<Obra | null>(null);
   const [loading, setLoading] = useState(true);
@@ -116,6 +117,19 @@ const ObraPage = () => {
           </div>
         </div>
       )}
+
+      {/* Botão flutuante "Voltar" */}
+      <button
+        className="btn btn-secondary btn-lg position-fixed"
+        style={{
+          top: "20px", // Posiciona no topo
+          right: "20px", // Alinha à direita
+          zIndex: 1000, // Garante que o botão fique acima de outros elementos
+        }}
+        onClick={() => router.back()} // Redireciona para a página anterior
+      >
+        Voltar
+      </button>
     </section>
   );
 };

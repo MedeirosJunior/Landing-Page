@@ -2,9 +2,9 @@ import '../styles/globals.css'; // Estilos globais
 import '../styles/modal.css'; // Estilos do modal
 import '../styles/footer.css'; // Estilos do footer
 import '../styles/images.css'; // Estilos das imagens
-import '../styles/social-icons.css';
-import '../styles/carousel.css';
-import '../styles/navbar.css';
+import '../styles/navbar.css'; // Estilos da navba
+import '../styles/social-icons.css'; // Estilos dos ícones sociais
+import '../styles/carousel.css';// Estilos do carrossel
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import WhatsAppButton from '../components/WhatsAppButton';
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
+
       <body className={inter.className}>
         <BootstrapClient /> {/* Carrega o Bootstrap apenas no cliente */}
         <ClientWrapper>

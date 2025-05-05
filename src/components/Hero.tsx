@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link'; // Importa o componente Link
 
 const Hero = () => {
   return (
@@ -18,11 +19,13 @@ const Hero = () => {
             </h2>
             <p className="lead text-secondary mb-4">
               Oferecemos soluções personalizadas para a sua obra, com foco no design personalizado e conforto do cliente.
-              Nossa equipe é composta por profissionais altamente qualificados, prontos para transformar sua visão em realidade. Combinamos tecnologia de ponta com experiência prática para garantir resultados excepcionais. 
+              Nossa equipe é composta por profissionais altamente qualificados, prontos para transformar sua visão em realidade. Combinamos tecnologia de ponta com experiência prática para garantir resultados excepcionais.
             </p>
-            <button className="btn btn-primary btn-lg">
-              Agende uma consultoria
-            </button>
+            <Link href="/contato">
+              <button className="btn btn-primary btn-lg">
+                Agende uma consultoria
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -3,8 +3,11 @@
 import React from "react";
 import Link from "next/link";
 import MaskedInput from "@/components/MaskedInput";
+import { useRouter } from "next/navigation"; // Importa o hook useRouter
 
 const Contato = () => {
+  const router = useRouter(); // Inicializa o hook useRouter
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget; // Referência ao formulário
@@ -108,6 +111,14 @@ const Contato = () => {
                 </button>
               </div>
             </form>
+            <div className="text-center mt-4">
+              <button
+                className="btn btn-secondary btn-lg"
+                onClick={() => router.back()} // Redireciona para a página anterior
+              >
+                Voltar
+              </button>
+            </div>
           </div>
         </div>
       </div>

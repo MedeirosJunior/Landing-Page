@@ -57,8 +57,8 @@ export default function ImageCarousel() {
                 className="object-cover"
                 priority={index === 0}
               />
-              <div className="absolute z-20 text-center" style={{ color: '#faebd7' }}> {/* Texto laranja com estilo inline */}
-                <h2 className="text-3xl md:text-4xl font-bold mb-10">{image.title}</h2>
+              <div className="absolute z-20 text-center" style={{ color: '#ffffff' }}> {/* Texto laranja com estilo inline */}
+                <h2 className="text-4xl md:text-4xl font-bold mb-20">{image.title}</h2>
                 <p className="text-lg md:text-xl">{image.description}</p>
               </div>
             </div>

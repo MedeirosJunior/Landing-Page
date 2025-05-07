@@ -12,21 +12,21 @@ import 'swiper/css/pagination';
 const images = [
   {
     src: 'https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/slide1.jpg',
-    alt: 'Consultoria Empresarial',
-    title: 'Consultoria Empresarial',
-    description: 'Soluções estratégicas para o seu negócio'
+    alt: 'Consultoria Técnica',
+    title: 'Consultoria Técnica',
+    description: 'Soluções especializadas para obras de vidros e esquadrias'
   },
   {
     src: 'https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/slide2.jpg',
-    alt: 'Treinamentos',
-    title: 'Treinamentos',
-    description: 'Capacitação profissional de alta performance'
+    alt: 'Treinamento de Equipes',
+    title: 'Treinamento de Equipes',
+    description: 'Capacitação profissional para instalação de vidros e esquadrias'
   },
   {
     src: 'https://raw.githubusercontent.com/MedeirosJunior/Landing-Page/main/public/images/slide3.jpg',
     alt: 'Gestão de Projetos',
     title: 'Gestão de Projetos',
-    description: 'Metodologias ágeis e resultados eficientes'
+    description: 'Planejamento e execução com foco em eficiência e qualidade'
   },
 ];
 
@@ -67,4 +67,4 @@ export default function ImageCarousel() {
       </Swiper>
     </div>
   );
-} 
+}

@@ -21,9 +21,9 @@ const Footer = () => {
         <div className="row g-4">
           {/* Coluna 1 - Logo e Descrição */}
           <div id="footer" className="col-md-4">
-            <h3 className="text-uppercase fw-bold mb-4">Consultoria Financeira</h3>
+            <h3 className="text-uppercase fw-bold mb-4">Consultoria Especializada</h3>
             <p className="text-muted">
-              Ajudamos você a tomar as melhores decisões financeiras para seu futuro.
+              Ajudamos você a tomar as melhores decisões para sua obra. 
             </p>
             {locations.map((location, index) => (
               <div key={index} className="mt-4">
@@ -49,10 +49,7 @@ const Footer = () => {
             <nav className="d-flex flex-column">
               <Link href="/" className="text-muted text-decoration-none mb-2">
                 Início
-              </Link>
-              <Link href="/sobre" className="text-muted text-decoration-none mb-2">
-                Sobre
-              </Link>
+              </Link>              
               <Link href="/servicos" className="text-muted text-decoration-none mb-2">
                 Serviços
               </Link>

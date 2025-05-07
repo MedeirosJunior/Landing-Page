@@ -4,19 +4,19 @@ import React from 'react';
 
 const testimonials = [
   {
-    text: "A Vivian Nunes Consultoria transformou completamente minha abordagem profissional. Os resultados foram além das minhas expectativas.",
+    text: "A consultoria da Vivian Nunes foi essencial para otimizar os processos em nossas obras de vidros e esquadrias. A expertise técnica trouxe resultados incríveis.",
     author: "ADRIANA SOUZA",
-    role: "Gerente de RH"
+    role: "Engenheira Civil"
   },
   {
-    text: "O trabalho da Vivian Nunes foi fundamental para o crescimento da minha carreira. A metodologia aplicada é realmente transformadora.",
+    text: "Com o suporte da Vivian Nunes, conseguimos reduzir custos e melhorar a qualidade na instalação de esquadrias. Recomendo para qualquer empresa do setor.",
     author: "JOSÉ LUIS",
     role: "Empresário"
   },
   {
-    text: "A experiência com a Vivian Nunes Consultoria foi excepcional. A didática e o acompanhamento personalizado fizeram toda a diferença.",
+    text: "O acompanhamento personalizado da Vivian Nunes fez toda a diferença no planejamento e execução das nossas obras de vidros. Excelente trabalho!",
     author: "FERNANDO LIMA",
-    role: "Universitário"
+    role: "Arquiteto"
   }
 ];
 

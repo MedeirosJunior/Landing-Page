@@ -25,26 +25,26 @@ const Consultoria = () => {
             <h2 className="display-5 fw-bold mb-4">NOSSOS SERVIÇOS</h2>
             <div className="mb-4" style={{ width: '80px', height: '4px', backgroundColor: '#F7941D' }}></div>
             <p className="text-muted mb-4">
-              Oferecemos consultoria especializada em desenvolvimento pessoal e profissional, 
-              com foco em transformação real e resultados duradouros. Nossa abordagem é 
-              personalizada e adaptada às suas necessidades específicas.
+              Oferecemos consultoria especializada em obras no setor de vidros e esquadrias, 
+              com foco em otimização de processos, redução de custos e melhoria na qualidade 
+              dos serviços. Nossa abordagem é personalizada e adaptada às necessidades de cada projeto.
             </p>
             <ul className="list-unstyled mb-4">
               <li className="d-flex align-items-center mb-2">
                 <span className="text-success me-2">✓</span>
-                Coaching individual e em grupo
+                Planejamento e execução de obras de vidros e esquadrias
               </li>
               <li className="d-flex align-items-center mb-2">
                 <span className="text-success me-2">✓</span>
-                Mentoria profissional
+                Consultoria técnica para instalação de esquadrias
               </li>
               <li className="d-flex align-items-center mb-2">
                 <span className="text-success me-2">✓</span>
-                Desenvolvimento de liderança
+                Treinamento de equipes para instalação de vidros
               </li>
               <li className="d-flex align-items-center mb-2">
                 <span className="text-success me-2">✓</span>
-                Treinamentos corporativos
+                Análise e otimização de custos em projetos
               </li>
             </ul>
             <button className="btn btn-primary btn-lg">
